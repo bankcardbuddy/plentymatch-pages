@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pensacola Matchmaking | PlentyMatch</title>
+  <title>PlentyMatch | Real Love Starts Here</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -14,38 +14,91 @@
       background-color: #FFF7F7;
       color: #2c2c2c;
     }
-    section {
-      padding: 1rem;
+
+    .hero-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5rem 2rem;
+      background-color: #FFF7F7;
     }
-    h1 {
-      text-align: center;
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
       color: #d94444;
+      margin-bottom: 1rem;
     }
-    p {
+
+    .hero-text p {
       font-size: 1.2rem;
-      text-align: center;
+      color: #4a4a4a;
+      line-height: 1.6;
+      margin-bottom: 2rem;
     }
+
+    .hero-buttons {
+      margin-top: 1rem;
+    }
+
     .button {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
       background-color: #d94444;
       color: white;
-      text-decoration: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
       border-radius: 30px;
-      text-align: center;
+      text-decoration: none;
+      margin-right: 1rem;
+      transition: background-color 0.3s ease;
     }
+
     .button:hover {
       background-color: #c33b3b;
+    }
+
+    .hero-image {
+      max-width: 500px;
+      border-radius: 10px;
+    }
+    
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .hero-image {
+        margin-top: 2rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <section>
-    <h1>Pensacola Matchmaking</h1>
-    <p>PlentyMatch is your matchmaking solution in Pensacola. Find meaningful connections without the hassle of endless swiping!</p>
-    <a href="https://plenty-match.smartmatchapp.com/client/submissionform/18/default/" class="button" target="_blank">Get Started</a>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-text">
+      <h1>The New Way to Meet Your Match</h1>
+      <p>plentymatch is where modern dating meets intentional connection. We serve relationship-minded singles who are ready to meet with clarity, chemistry, and real compatibility — no endless swiping, no guesswork.</p>
+      <p>Our community is built for those who want more than small talk and shared playlists — they want depth, direction, and something real. Every introduction is thoughtfully curated, centered around mutual values, energy, and aligned long-term goals.</p>
+      <div class="hero-buttons">
+        <a href="https://plenty-match.smartmatchapp.com/client/submissionform/18/default/" class="button">Get Started</a>
+        <a href="#" class="button">Learn More</a>
+      </div>
+    </div>
+    <div>
+      <img class="hero-image" src="https://i.imgur.com/tdT0PCV.jpeg" alt="Couple in love" />
+    </div>
   </section>
 
 </body>
 </html>
+
